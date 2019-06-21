@@ -1,4 +1,6 @@
 jQuery(document).ready(function( $ ) {
+  $(document).scrollTop(0);
+  $('.header').hide();
 
   $(window).scroll(function () {
     var height = $(window).height();
@@ -13,10 +15,12 @@ jQuery(document).ready(function( $ ) {
 
   // Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 800) {
       $('.back-to-top').fadeIn('slow');
+      $('.header').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
+      $('.header').fadeOut('slow');
     }
   });
   $('.back-to-top').click(function(){
