@@ -8,7 +8,14 @@ body {
   font-size: 100%;
   line-height: 1.25;
   font-family: 'Lato', Arial, sans-serif;
+  overflow-x: hidden;
 }
+
+a:hover{
+  text-decoration: none !important;
+}
+
+.margin0 { margin: 0 !important; }
 
 /* body {
   background-color: #fff;
@@ -194,6 +201,7 @@ span {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  /* background: black; */
   /* width: 100%; */
   height: calc(100vh - 40px);
   /* background: url(../img/hero-bg.png) center bottom no-repeat; */
@@ -584,7 +592,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 30px;
-  text-transform: capitalize;
 }
 
 /* Get Started Section
@@ -940,11 +947,11 @@ footer {
 }
 
 footer a {
-  color: #a23476;
+  color: rgb(162, 52, 118);
 }
 
 footer a:hover {
-  color: #fff;
+  text-decoration: underline;
 }
 
 .footer .footer-logo .navbar-brand {
@@ -1035,7 +1042,7 @@ footer a:hover {
 .companyName {
   position: relative;
   float: left;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #555;
@@ -1090,3 +1097,53 @@ footer a:hover {
   font-size: 80px;
 }
 
+/* our work */
+.our-work{
+  min-height: 500px;
+  font-size: 50px;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+.our-work span{
+  color: #fff;
+}
+.our-work:hover span {
+  color: #a23476;
+}
+.our-work:hover {
+  transition: .3s ease-out;
+}
+#ascender{
+  background: url('https://static.wixstatic.com/media/657d93c686e44e2d9b543a6e1e42cbca.jpg/v1/fill/w_3360,h_1064,al_c,q_90,usm_0.66_1.00_0.01/657d93c686e44e2d9b543a6e1e42cbca.webp') rgba(0,0,0,0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+#ascender:hover{
+  background: url('https://static.wixstatic.com/media/657d93c686e44e2d9b543a6e1e42cbca.jpg/v1/fill/w_3360,h_1064,al_c,q_90,usm_0.66_1.00_0.01/657d93c686e44e2d9b543a6e1e42cbca.webp') rgba(0,0,0,.8);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#satvik{
+  background: url('https://www.satvikmilkproducts.com/img/milk_glass.jpg') rgba(0,0,0,0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#satvik:hover{
+  background: url('https://www.satvikmilkproducts.com/img/milk_glass.jpg') rgba(0,0,0,0.9);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.mobile-div{
+  margin-top: 50px;
+}
+.mobile-grid{
+  height: calc(25vh);;
+  background: #a23476;
+  box-shadow: 0px 0px 70px #000 inset;
+}
+.mobile-grid span{
+ color: #fff;
+}
