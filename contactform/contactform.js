@@ -92,15 +92,15 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
     if( ! action ) {
-      action = 'contactform/contactform.php';
+      action = 'http://ec2-13-234-136-223.ap-south-1.compute.amazonaws.com:8080/send-email?';
     }
     $.ajax({
       type: "POST",
-      url: action,
-      data: str,
+      url: action + str,
       success: function(msg) {
+        debugger
         // alert(msg);
-        if (msg == 'OK') {
+        if (msg == 'successfully sent') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
@@ -109,7 +109,6 @@ jQuery(document).ready(function($) {
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg);
         }
-
       }
     });
     return false;
