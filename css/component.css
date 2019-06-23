@@ -324,15 +324,23 @@
   }
 
   .blob ul li{
-	font-size: 20px;
-	line-height: 40px;
+	/* text-align: left; */
+	font-size: 18px;
 	color: aquamarine;
 	font-family: Lato, Arial, sans-serif;
+	text-align: left;
+	margin-left: 10px;
+	color: #555;
 }
 
   .blob:hover {
-	border-radius: 0;
-	line-height: 100px;
+	border-radius: 5px;
+	line-height: 80px;
+	/* background: #000; */
+	background: #fff;
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+	transition: all 0.5s ease-in-out 0s;
+	color: #a23476;
   }
 
   .blob:hover ul {
@@ -366,4 +374,8 @@
 	-webkit-animation-name: blob-left-top-anim-new;
 			animation-name: blob-left-top-anim-new;
   }
+  
+
+  /* sending message */
+
   

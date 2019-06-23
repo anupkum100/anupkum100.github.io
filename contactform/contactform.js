@@ -1,13 +1,13 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   "use strict";
 
   //Contact
-  $('form.contactForm').submit(function() {
+  $('form.contactForm').submit(function () {
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
-    f.children('input').each(function() { // run all inputs
+    f.children('input').each(function () { // run all inputs
 
       var i = $(this); // current input
       var rule = i.attr('data-rule');
@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
             break;
 
           case 'checked':
-            if (! i.is(':checked')) {
+            if (!i.is(':checked')) {
               ferror = ierror = true;
             }
             break;
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
         i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-    f.children('textarea').each(function() { // run all inputs
+    f.children('textarea').each(function () { // run all inputs
 
       var i = $(this); // current input
       var rule = i.attr('data-rule');
@@ -91,15 +91,24 @@ jQuery(document).ready(function($) {
     if (ferror) return false;
     else var str = $(this).serialize();
     var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'http://ec2-13-234-136-223.ap-south-1.compute.amazonaws.com:8080/send-email?';
+    if (!action) {
+      action = 'http://ec2-13-234-136-223.ap-south-1.compute.amazonaws.com:8090/send-email?';
     }
+    var Name = $("[name=name]").val();
+    var Email = $("[name=email]").val();
+    var Subject = $("[name=subject]").val();
+    var Message = $("[name=message]").val();
+    var updatedString = "subject=" + Subject + "&message=" + Name + " from emailId " + Email + " sent a message : " + Message;
+
+    $("#btnSubmit").attr("disabled", true);
+    $("#btnSubmit").text('Sending...');
+
     $.ajax({
       type: "POST",
-      url: action + str,
-      success: function(msg) {
-        debugger
-        // alert(msg);
+      url: action + updatedString,
+      success: function (msg) {
+        $("#btnSubmit").removeAttr("disabled");
+        $("#btnSubmit").text('Send Message');
         if (msg == 'successfully sent') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");

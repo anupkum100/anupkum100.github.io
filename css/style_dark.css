@@ -941,6 +941,12 @@ body.mobile-nav-active #mobile-nav-toggle i {
   background: rgb(211, 35, 22);
 }
 
+#contact .form button[type="submit"]:disabled{
+  background: #efefef;
+  pointer-events: none;
+}
+
+
 footer {
   background: #2a2c30;
   padding-top: 50px;
@@ -1095,6 +1101,12 @@ footer a:hover {
 .companyName .big{
   color: #a23476;
   font-size: 80px;
+  font-weight: normal;
+}
+
+.big{
+  color: #a23476;
+  font-weight: bold;
 }
 
 /* our work */
@@ -1141,9 +1153,21 @@ footer a:hover {
 }
 .mobile-grid{
   height: calc(25vh);;
-  background: #a23476;
-  box-shadow: 0px 0px 70px #000 inset;
+  /* background: #a23476; */
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 .mobile-grid span{
- color: #fff;
+ color: #a23476;
+ font-size: 14px;
+}
+.mobile-grid ul{
+  margin-top: 20px;
+}
+
+.mobile-grid ul li{
+  color: #555;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
 }
