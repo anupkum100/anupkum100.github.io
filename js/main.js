@@ -41,14 +41,6 @@ jQuery(document).ready(function ($) {
   // Initiate the wowjs animation library
   new WOW().init();
 
-  // Initiate superfish on nav menu
-  $('.nav-menu').superfish({
-    animation: {
-      opacity: 'show'
-    },
-    speed: 400
-  });
-
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
     var $mobile_nav = $('#nav-menu-container').clone().prop({
@@ -59,7 +51,7 @@ jQuery(document).ready(function ($) {
       'id': ''
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
+    $('body').prepend('<div id="mobile-nav-toggle"><i class="fa fa-bars"></i></div>');
     $('body').append('<div id="mobile-body-overly"></div>');
     $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
 
@@ -122,9 +114,6 @@ jQuery(document).ready(function ($) {
       }
     }
   });
-
-  // Modal video
-  new ModalVideo('.js-modal-btn', { channel: 'youtube' });
 
   // Init Owl Carousel
   $('.owl-carousel').owlCarousel({

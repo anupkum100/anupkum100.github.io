@@ -1,13 +1,17 @@
+@font-face {
+  font-family: 'Jura-Bold';
+  src: url('../lib/Jura/Jura-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
 *{
     color: #a23476;
+    font-family: 'Jura-Bold', sans-serif;
 }
 
 body {
-  /* background: #2c3e50; */
   color: #ecf0f1;
   font-size: 100%;
   line-height: 1.25;
-  font-family: 'Lato', Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -17,31 +21,22 @@ a:hover{
 
 .margin0 { margin: 0 !important; }
 
-/* body {
-  background-color: #fff;
-  overflow-x: hidden;
-} */
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
 h2 {
-  /* color: #000; */
   font-weight: 600;
 }
 
 h4 {
-  /* color: #000; */
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
   text-transform: uppercase;
   line-height: 2;
 }
 
 h5 {
-  /* color: #626262; */
   font-size: 14px;
   font-weight: 500;
 }
@@ -169,8 +164,8 @@ span {
 
 #header #logo h1 {
   color: #505050;
-  font-family: "Philosopher", sans-serif;
-  font-size: 26px;
+  /* font-family: "Philosopher", sans-serif; */
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 1px;
   margin: 0;
@@ -201,17 +196,8 @@ span {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  /* background: black; */
-  /* width: 100%; */
   height: calc(100vh - 40px);
-  /* background: url(../img/hero-bg.png) center bottom no-repeat; */
-  /* background-size: 100%; */
   position: relative;
-  /* margin-top: 50px; */
-  /* border: 1px solid red; */
-  /* text-align: center; */
-  /* vertical-align: middle; */
-  /* line-height: calc(100vh - 40px); */
 }
 
 @media (min-width: 1025px) {
@@ -220,12 +206,16 @@ span {
   }
 }
 
+@media only screen and (max-width: 1025px) {
+  #hero {
+    height: calc(50vh);
+  }
+}
+
 #hero .hero-container {
   position: absolute;
-  /* bottom: 0; */
   top: 30%;
   left: 40%;
-  /* right: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,7 +228,7 @@ span {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  font-family: "Philosopher", sans-serif;
+  /* font-family: "Philosopher", sans-serif; */
   color: #a23476;
 }
 
@@ -253,7 +243,7 @@ span {
   color: #777;
   margin-bottom: 30px;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-weight: 300;
 }
 
@@ -271,7 +261,7 @@ span {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   text-transform: uppercase;
   font-weight: 400;
   font-size: 13px;
@@ -364,7 +354,7 @@ span {
   position: absolute;
   right: 8px;
   margin-top: 1px;
-  font-family: FontAwesome;
+  /* font-family: FontAwesome; */
   font-style: normal;
   font-weight: normal;
 }
@@ -391,7 +381,7 @@ span {
   text-decoration: none;
   display: inline-block;
   color: #555;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-weight: 400;
   font-size: 14px;
   outline: none;
@@ -438,10 +428,9 @@ span {
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
   position: fixed;
-  right: 0;
-  top: 0;
+  right: 5px;
+  top: 5px;
   z-index: 999;
-  margin: 4px 20px 0 0;
   border: 0;
   background: none;
   font-size: 24px;
@@ -574,7 +563,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 .section-title h2 {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -588,7 +577,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 .separator {
   color: #626262;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 30px;
@@ -653,7 +642,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 #about-us .about-content h2 {
   color: #252525;
-  font-family: "roboto";
+  /* font-family: "roboto"; */
   font-size: 39px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -723,7 +712,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #testimonials .top-top > h2 {
-  font-family: "Roboto" sans-serif;
+  /* font-family: "Roboto" sans-serif; */
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -964,7 +953,7 @@ footer a:hover {
   color: #fff;
   display: inline-block;
   float: none;
-  font-family: "Philosopher", sans-serif;
+  /* font-family: "Philosopher", sans-serif; */
   font-size: 24px;
   font-weight: 500;
   height: 100%;
@@ -1002,7 +991,7 @@ footer a:hover {
 .footer .copyrights p, .footer .copyrights .credits {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0;
@@ -1125,41 +1114,55 @@ footer a:hover {
 .our-work:hover {
   transition: .3s ease-out;
 }
+
 #ascender{
-  background: url('https://static.wixstatic.com/media/657d93c686e44e2d9b543a6e1e42cbca.jpg/v1/fill/w_3360,h_1064,al_c,q_90,usm_0.66_1.00_0.01/657d93c686e44e2d9b543a6e1e42cbca.webp') rgba(0,0,0,0.6);
-  background-size: cover;
-  background-blend-mode: multiply;
-}
-#ascender:hover{
-  background: url('https://static.wixstatic.com/media/657d93c686e44e2d9b543a6e1e42cbca.jpg/v1/fill/w_3360,h_1064,al_c,q_90,usm_0.66_1.00_0.01/657d93c686e44e2d9b543a6e1e42cbca.webp') rgba(0,0,0,.8);
-  background-size: cover;
-  background-blend-mode: multiply;
+  background: rgba(121, 143, 204, 0.8);
 }
 
 #satvik{
-  background: url('https://www.satvikmilkproducts.com/img/milk_glass.jpg') rgba(0,0,0,0.6);
-  background-size: cover;
-  background-blend-mode: multiply;
+  background: rgba(106, 189, 150, 0.8);
 }
 
-#satvik:hover{
-  background: url('https://www.satvikmilkproducts.com/img/milk_glass.jpg') rgba(0,0,0,0.9);
-  background-size: cover;
-  background-blend-mode: multiply;
+@media (min-width: 1025px) {
+  #ascender{
+    background: url('https://static.wixstatic.com/media/657d93c686e44e2d9b543a6e1e42cbca.jpg/v1/fill/w_3360,h_1064,al_c,q_90,usm_0.66_1.00_0.01/657d93c686e44e2d9b543a6e1e42cbca.webp') rgba(0,0,0,0.6);
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+  #ascender:hover{
+    background: url('https://static.wixstatic.com/media/657d93c686e44e2d9b543a6e1e42cbca.jpg/v1/fill/w_3360,h_1064,al_c,q_90,usm_0.66_1.00_0.01/657d93c686e44e2d9b543a6e1e42cbca.webp') rgba(0,0,0,.8);
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+  
+  #satvik{
+    background: url('https://www.satvikmilkproducts.com/img/milk_glass.jpg') rgba(0,0,0,0.6);
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+  
+  #satvik:hover{
+    background: url('https://www.satvikmilkproducts.com/img/milk_glass.jpg') rgba(0,0,0,0.9);
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
 }
+
 
 .mobile-div{
   margin-top: 50px;
 }
 .mobile-grid{
-  height: calc(25vh);;
+  height: calc(50vh);;
   /* background: #a23476; */
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) inset;
+  padding: 30px 0;
+  width: 80%;
+  margin: auto
 }
 .mobile-grid span{
  color: #a23476;
- font-size: 14px;
+ font-size: 30px;
 }
 .mobile-grid ul{
   margin-top: 20px;
@@ -1167,7 +1170,11 @@ footer a:hover {
 
 .mobile-grid ul li{
   color: #555;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
-  line-height: 20px;
+  line-height: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: #a23476;
 }
