@@ -1123,32 +1123,6 @@ footer a:hover {
   background: rgba(106, 189, 150, 0.8);
 }
 
-@media (min-width: 1025px) {
-  #ascender{
-    background: url('https://static.wixstatic.com/media/657d93c686e44e2d9b543a6e1e42cbca.jpg/v1/fill/w_3360,h_1064,al_c,q_90,usm_0.66_1.00_0.01/657d93c686e44e2d9b543a6e1e42cbca.webp') rgba(0,0,0,0.6);
-    background-size: cover;
-    background-blend-mode: multiply;
-  }
-  #ascender:hover{
-    background: url('https://static.wixstatic.com/media/657d93c686e44e2d9b543a6e1e42cbca.jpg/v1/fill/w_3360,h_1064,al_c,q_90,usm_0.66_1.00_0.01/657d93c686e44e2d9b543a6e1e42cbca.webp') rgba(0,0,0,.8);
-    background-size: cover;
-    background-blend-mode: multiply;
-  }
-  
-  #satvik{
-    background: url('https://www.satvikmilkproducts.com/img/milk_glass.jpg') rgba(0,0,0,0.6);
-    background-size: cover;
-    background-blend-mode: multiply;
-  }
-  
-  #satvik:hover{
-    background: url('https://www.satvikmilkproducts.com/img/milk_glass.jpg') rgba(0,0,0,0.9);
-    background-size: cover;
-    background-blend-mode: multiply;
-  }
-}
-
-
 .mobile-div{
   margin-top: 50px;
 }
