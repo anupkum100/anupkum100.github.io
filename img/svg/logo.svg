@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<svg width="100" height="100"  xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="70" fill="#A23476" font-size="60" font-family="Arial, Helvetica, sans-serif">T</text>
+  <text x="35" y="60" fill="#A23476" font-size="30" font-family="cursive">W</text>
+  <text x="62" y="71" fill="#A23476" font-size="45" font-family="Arial, Helvetica, sans-serif">S</text>
+  <circle cx="25" cy="90" r="10" fill="#A23476" />
+  <circle cx="50" cy="90" r="8" fill="#A23476" />
+  <circle cx="70" cy="90" r="6" fill="#D279AA" />
+  <circle cx="85" cy="90" r="4" fill="#D279AA" />
+  <circle cx="97" cy="90" r="2" fill="#D279AA" />
+</svg>

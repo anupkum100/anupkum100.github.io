@@ -20,6 +20,7 @@ a:hover{
 }
 
 .margin0 { margin: 0 !important; }
+.padding-left0 {padding-left: 0 !important}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -159,7 +160,7 @@ span {
 }
 
 #header #logo {
-  padding: 6px 0 0 0;
+  /* padding: 6px 0 0 0; */
 }
 
 #header #logo h1 {
@@ -169,6 +170,15 @@ span {
   font-weight: 500;
   letter-spacing: 1px;
   margin: 0;
+  display: inline-block;
+  line-height: 50px;
+}
+
+@media only screen and (max-width: 786px) {
+  #header #logo h1 {
+    font-size: 20px;
+    line-height: 50px;
+  }
 }
 
 #header #logo h1 a {
@@ -182,7 +192,14 @@ span {
   color: #a23476;
 }
 
+#header #logo .logo-image{
+  float: left;
+  height: 40px;
+  width: 50px;
+}
+
 #header #logo img {
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -1116,24 +1133,48 @@ footer a:hover {
 }
 
 #ascender{
-  background: rgba(121, 143, 204, 0.8);
+  background-image: url('../img/ascender.webp');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 #satvik{
-  background: rgba(106, 189, 150, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('../img/satvik.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
 }
+
+#ascender:hover{
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#satvik:hover{
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 
 .mobile-div{
   margin-top: 50px;
 }
 .mobile-grid{
-  height: calc(50vh);;
-  /* background: #a23476; */
+  height: calc(50vh);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) inset;
   padding: 30px 0;
   width: 80%;
   margin: auto
 }
+
+@media (min-width: 768px) {
+  #hero{
+    height: calc(100vh);
+  }
+  .mobile-grid{
+    height: calc(100vh);
+  }
+}
+
 .mobile-grid span{
  color: #a23476;
  font-size: 30px;
